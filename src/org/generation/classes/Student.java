@@ -35,4 +35,10 @@ public class Student{
 	public List<Course> getCourseList() {
 		return courseList;
 	}//getCourseList
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", id=" + id + ", age=" + age + ", courseList=" + courseList + "]";
+	}
+	
 }//class Student

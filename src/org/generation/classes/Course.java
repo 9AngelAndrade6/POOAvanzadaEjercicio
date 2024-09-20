@@ -3,6 +3,7 @@ public class Course{
     private String name;
     private int credits;
     private String professorName;
+    
     public Course( String name, int credits, 
     		String professorName ){
         this.name = name;
@@ -29,5 +30,12 @@ public class Course{
 	public void setProfessorName(String professorName) {
 		this.professorName = professorName;
 	}//setProfessorName
+
+	@Override
+	public String toString() {
+		return "Course [name=" + name + ", credits=" + credits + ", professorName=" + professorName + "]";
+	}
+	
+	
     
 }// classCourse
